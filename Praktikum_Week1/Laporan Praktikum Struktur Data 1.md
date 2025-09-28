@@ -30,72 +30,73 @@ Struktur data adalah cara untuk menyimpan dan mengorganisir data dalam komputer 
 
 ### 4.1 Guided 1
 
-![[Pasted image 20250928170925.png]]
+<img width="1011" height="424" alt="Screenshot 2025-09-28 170909" src="https://github.com/user-attachments/assets/8c6bfe14-5fcb-4f3a-b1e9-b3fc8a066034" />
 
   **Penjelasan :**
 	  Program di atas dibuat untuk menghitung diskon dari total belanja yang dimasukkan oleh pengguna. Pertama, program meminta input berupa nilai total pembelian, lalu menyimpannya ke dalam variabel `total_pembelian`. Setelah itu dilakukan pengecekan dengan struktur `if-else`, yaitu jika nilai pembelian lebih besar atau sama dengan Rp30.000, maka pengguna berhak mendapat diskon sebesar 10% dari total belanja. Nilai diskon ini dihitung menggunakan rumus `diskon = 0.1 * total_pembelian` dan hasilnya langsung ditampilkan. Namun, jika pembelian kurang dari Rp30.000, program akan menampilkan pesan bahwa belanjanya masih kurang untuk mendapatkan diskon. 
 	  
 **Output** :
 
-![[Pasted image 20250928172913.png]]
+<img width="549" height="50" alt="Screenshot 2025-09-28 172903" src="https://github.com/user-attachments/assets/53e5fb59-7fc0-42b9-bc9e-e531b58ec439" />
+
 ### 4.2 Guided 2
 
-![[Pasted image 20250928173056.png]]
+<img width="1180" height="340" alt="Screenshot 2025-09-28 173054" src="https://github.com/user-attachments/assets/8e6d6875-c6aa-454c-a59d-788326ee608b" />
 
 **Penjelasan :**
 	Program di atas dibuat untuk mengonversi suhu dari satuan Celcius ke Fahrenheit. Pertama, program mendeklarasikan dua variabel bertipe `float`, yaitu `celcius` untuk menyimpan input dari pengguna dan `fahrenheit` untuk menyimpan hasil konversi. Program kemudian menampilkan pesan ke layar untuk meminta input suhu dalam Celcius, lalu membaca nilai yang dimasukkan melalui `cin`. Setelah itu, program melakukan perhitungan konversi menggunakan rumus `(9.0/5.0) * celcius + 32`, yang memang merupakan rumus standar untuk mengubah suhu dari Celcius ke Fahrenheit. Hasil perhitungan disimpan dalam variabel `fahrenheit`, kemudian ditampilkan kembali ke layar dengan pesan yang menyebutkan nilai dalam derajat Fahrenheit. 
 
 **Output :**
 
-![[Pasted image 20250928173255.png]]
+<img width="616" height="78" alt="Screenshot 2025-09-28 173247" src="https://github.com/user-attachments/assets/14de2990-0d06-437e-bf3a-94e6ce406098" />
 
 ### 4.3 Guided 3
 
-![[Pasted image 20250928173436.png]]
+<img width="652" height="336" alt="Screenshot 2025-09-28 173407" src="https://github.com/user-attachments/assets/c5f5de8c-37ea-4a3d-a3c1-ee0099901b8e" />
 
 **Penjelasan :**
 	Program di atas digunakan untuk menunjukkan perbedaan penggunaan operator **increment prefix (`++r`)** pada variabel. Pertama, variabel `r` diinisialisasi dengan nilai 20, kemudian variabel `s` dideklarasikan tanpa nilai awal. Pada baris berikutnya, dilakukan operasi `s = 20 + ++r;`. Karena menggunakan operator prefix (`++r`), nilai `r` akan dinaikkan terlebih dahulu menjadi 21, baru kemudian dipakai dalam perhitungan. Artinya, ekspresi tersebut sama dengan `s = 20 + 21;`, sehingga `s` bernilai 41, sementara `r` menjadi 21. Program kemudian menampilkan kedua nilai itu ke layar menggunakan `cout`. 
 
 **Output :**
 
-![[Pasted image 20250928173640.png]]
+<img width="256" height="53" alt="Screenshot 2025-09-28 173625" src="https://github.com/user-attachments/assets/28983a5b-9847-4aed-bd86-d2cc1a483129" />
 
 ## 5. Unguided
 
 ### 5.1 Unguided 1
 
-![[Pasted image 20250928173807.png]]
+<img width="424" height="368" alt="Screenshot 2025-09-28 173802" src="https://github.com/user-attachments/assets/85704a66-f7d5-45c8-bceb-4ef7a5990fe7" />
 
 **Penjelasan :**
 	Program di atas merupakan contoh sederhana operasi aritmetika dasar menggunakan dua bilangan bertipe `float`. Pertama, program mendeklarasikan dua variabel `a` dan `b`, lalu meminta pengguna untuk memasukkan dua bilangan melalui `cin`. Setelah nilai dimasukkan, program langsung menampilkan hasil penjumlahan (`a+b`), pengurangan (`a-b`), dan perkalian (`a*b`). Untuk operasi pembagian, program menggunakan percabangan `if-else` untuk mengantisipasi kemungkinan pembagian dengan nol. Jika nilai `b` tidak sama dengan nol, maka hasil pembagian `a/b` akan ditampilkan. Namun, jika `b` bernilai nol, program akan menampilkan pesan "Error" agar tidak terjadi kesalahan perhitungan (division by zero). 
 
 **Output :**
 
-![[Pasted image 20250928173946.png]]
+<img width="209" height="130" alt="Screenshot 2025-09-28 173939" src="https://github.com/user-attachments/assets/54695c6a-d75a-41a2-ac46-2a4d11088579" />
   
 
 ### 5.2 Unguided 2
 
-![[Pasted image 20250928174054.png]]
+<img width="1774" height="512" alt="Screenshot 2025-09-28 174046" src="https://github.com/user-attachments/assets/90f97acd-24a2-4091-a6ed-9afec6d109c1" />
 
 **Penjelasan :**
 	Program pada gambar tersebut merupakan implementasi konversi bilangan bulat ke bentuk teks dalam bahasa Indonesia. Pertama, program mendefinisikan tiga array string, yaitu `satuan` untuk angka 0–9, `belasan` untuk angka 10–19, dan `puluhan` untuk kelipatan 10 dari 20 hingga 90. Setelah itu, program meminta input bilangan `n` dari pengguna. Jika bilangan bernilai 0 atau lebih dari 100, program menampilkan pesan “error”. Jika `n` kurang dari 10, angka diambil dari array `satuan`. Jika `n` kurang dari 20, maka teks diambil dari array `belasan` dengan indeks `n-10`. Untuk bilangan antara 20 hingga 99, program mencetak nilai dari array `puluhan[n/10]` dan, jika ada sisa pembagian (`n%10`), program juga menambahkan angka dari array `satuan[n%10]`. Sedangkan untuk angka 100, program langsung mencetak teks “seratus”. 
 
 **Output :**
 
-![[Pasted image 20250928174251.png]]
+<img width="308" height="53" alt="Screenshot 2025-09-28 174246" src="https://github.com/user-attachments/assets/cc7cddcb-62b0-4a86-beb9-355098dfa9a1" />
   
 
 ### 5.3 Unguided 3
 
-![[Pasted image 20250928174328.png]]
+<img width="650" height="547" alt="Screenshot 2025-09-28 174324" src="https://github.com/user-attachments/assets/f2a78ddf-6fa5-45d9-86a3-4feae0302dc5" />
 
 **Penjelasan :**
 	Program pada gambar tersebut bertujuan untuk menampilkan pola berbentuk segitiga simetris dengan kombinasi angka dan simbol bintang (`*`). Pertama, program meminta input bilangan bulat `n` dari pengguna sebagai tinggi segitiga. Bagian utama program menggunakan perulangan bersarang (`for`) untuk mengatur tata letak angka dan bintang. Perulangan luar (`for(int i=n; i>=1; i--)`) mengontrol jumlah baris dari `n` sampai `1`. Di dalamnya, ada tiga perulangan: yang pertama mencetak spasi agar pola tetap rata di tengah, yang kedua mencetak angka menurun dari `i` hingga `1`, lalu program menampilkan simbol `*` sebagai pemisah di tengah, dan perulangan ketiga mencetak angka naik dari `1` sampai `i`. Setelah selesai, program menutup setiap baris dengan `endl`. Pada bagian akhir, terdapat perulangan tambahan untuk mencetak spasi sebanyak `n` diikuti dengan satu simbol bintang di baris paling bawah sebagai dasar dari segitiga. 
 
 **Output :**
 
-![[Pasted image 20250928174618.png]]
+<img width="235" height="126" alt="Screenshot 2025-09-28 174606" src="https://github.com/user-attachments/assets/0a0010c3-190a-4f08-bc59-094b8f3dfb5f" />
 
 ## 6. Kesimpulan
 
