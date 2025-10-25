@@ -44,30 +44,32 @@ Struktur data adalah cara untuk menyimpan dan mengorganisir data dalam komputer 
 	- **`deleteByValue(L, x)`**: Menggabungkan `findElm` dengan operasi _delete_. Setelah _node_ dengan nilai `x` ditemukan, fungsi ini menentukan apakah akan menggunakan `deleteFirst`, `deleteLast`, atau `deleteAfter` berdasarkan posisi _node_ tersebut.
 	- **`deleteAll(L)`**: Mengosongkan seluruh _list_ dengan cara memanggil `deleteFirst` secara berulang dalam sebuah _loop_ hingga `L.first` menjadi `Nil`.
 	- **Operasi Kondisional (`smartInsert`, `conditionalDelete`)**: Ini adalah contoh bagaimana struktur _linked list_ dapat diintegrasikan dengan logika pemrograman (seperti `if-else`). Operasi ini memungkinkan penyisipan atau penghapusan elemen berdasarkan aturan atau kondisi tertentu (misalnya: nilai ganjil/genap, posisi, atau perbandingan dengan elemen lain). Saat menghapus elemen dalam sebuah _loop_ (seperti pada `conditionalDelete`), penting untuk menyimpan _pointer_ ke _node_ berikutnya (`nextNode = P->next`) sebelum menghapus `P`, agar iterasi tidak terputus.
+
 ## 4. Guided
 ### 4.1 Guided 1
 
-![[dll insert.png]]
+<img width="1942" height="3142" alt="dll insert" src="https://github.com/user-attachments/assets/dec6c087-8354-4d05-a644-f9f3f4dc1df3" />
 
 **Penjelasan**:
 Kode ini mendefinisikan struktur data **Doubly Linked List (DLL)**, yang terdiri dari _node_ (`elmlist`) dengan _pointer_ `next` dan `prev`, serta _header_ `List` yang melacak `first` dan `last`. Program ini menyediakan fungsi esensial untuk **menyisipkan** _node_ di tiga lokasi: `insertFirst` (di awal), `insertLast` (di akhir), dan `insertAfter` (di tengah, setelah _node_ tertentu). Fungsi `main` kemudian mendemonstrasikan operasi ini: pertama memasukkan 10 (ke awal), lalu 20 (ke akhir), dan terakhir 30 (setelah 10). Hasil akhir dari urutan sisipan ini, yang ditampilkan oleh fungsi `printInfo`, adalah `10 30 20`.
 
 **Output**:
-![[Pasted image 20251025121459.png]]
+<img width="584" height="78" alt="Screenshot 2025-10-25 121451" src="https://github.com/user-attachments/assets/c2e4c3c2-1611-4211-894d-5b6202f5375c" />
+
 ### 4.2 Guided 2
 
-![[dll delete.png]]
+<img width="1942" height="3180" alt="dll delete" src="https://github.com/user-attachments/assets/2c5db595-3c9f-42fd-bc4b-c56269e5a1d3" />
 
 **Penjelasan**:
 Kode ini adalah implementasi **Doubly Linked List (DLL)** yang berfokus pada operasi **penghapusan**. Fungsi `main` pertama-tama membuat _list_ `3 <-> 2 <-> 1` dengan tiga kali memanggil `insertFirst`. Panggilan `printInfo` pertama kemudian mencetak `3 2 1`. Selanjutnya, program memanggil `deleteFirst` (yang menghapus `3`), lalu memanggil `deleteAfter(L.first)` (yang menghapus elemen _setelah_ _node_ `2`, yaitu `1`). Panggilan `printInfo` kedua akhirnya mencetak elemen tunggal yang tersisa: `2`.
 
 **Output**:
-![[Pasted image 20251025122026.png]]
+<img width="327" height="108" alt="Screenshot 2025-10-25 122017" src="https://github.com/user-attachments/assets/eda38416-f656-4490-b2a9-06fa4d36626c" />
 
 ## 5. Unguided
 ### 5.1 Unguided 1
 
-![[unguided1.png]]
+<img width="1956" height="4510" alt="unguided1" src="https://github.com/user-attachments/assets/995405ca-acda-4c41-aa8f-f1513714958f" />
 
 **Penjelasan**:
 Kode ini adalah implementasi dari **Doubly Linked List (DLL)** yang menambahkan dua fungsionalitas baru yang penting. Selain fungsi penyisipan standar (`insertFirst`, `insertLast`, `insertAfter`), kode ini memperkenalkan `insertBefore(L, P, R)`, sebuah fungsi untuk menyisipkan _node_ `P` tepat _sebelum_ _node_ target `R`. Fungsi ini juga secara cerdas menangani kasus khusus jika `R` adalah elemen pertama (`L.first`) dengan memanggil `insertFirst`. Fungsi baru kedua adalah `printReverse(L)`, sebuah utilitas untuk mencetak isi _list_ dari belakang ke depan, dengan menelusuri _pointer_ `prev` mulai dari `L.last`.
@@ -75,11 +77,11 @@ Kode ini adalah implementasi dari **Doubly Linked List (DLL)** yang menambahkan 
 Fungsi `main` mendemonstrasikan alur kerja ini. Pertama, _list_ awal dibuat menjadi `1 <-> 3 <-> 2`. `printInfo` dan `printReverse` mencetak _list_ awal ini (`1 3 2` dan `2 3 1`). Kemudian, `insertBefore` dipanggil untuk menyisipkan `4` _sebelum_ _node_ `2`, menghasilkan `1 <-> 3 <-> 4 <-> 2`. Setelah itu, `insertBefore` dipanggil lagi untuk menyisipkan `5` _sebelum_ _node_ `1`, yang merupakan kasus khusus yang memanggil `insertFirst`. Hasil akhirnya, _list_ menjadi `5 <-> 1 <-> 3 <-> 4 <-> 2`, yang kemudian dicetak lagi secara forward (`5 1 3 4 2`) dan reverse (`2 4 3 1 5`).
 
 **Output**:
-![[Pasted image 20251025122412.png]]
+<img width="315" height="235" alt="Screenshot 2025-10-25 122407" src="https://github.com/user-attachments/assets/dcec8106-e74c-4396-be7b-f08c2cee4987" />
 
 ### 5.2 Unguided 2
 
-![[unguided2.png]]
+<img width="1956" height="5726" alt="unguided2" src="https://github.com/user-attachments/assets/f832a546-a05f-4887-9390-1fc40442770f" />
 
 **Penjelasan**:
 Kode ini adalah implementasi **Doubly Linked List (DLL)** yang telah dilengkapi dengan fungsionalitas pencarian dan penghapusan tingkat lanjut.  Selain fungsi dasar seperti `insertFirst` dan `deleteFirst`, tiga fungsi baru yang krusial telah ditambahkan. Pertama, fungsi `findElm(L, x)` bertindak sebagai mesin pencari; ia berjalan dari `L.first` ke akhir _list_, memeriksa setiap `info` _node_. Jika ia menemukan _node_ pertama yang nilainya sama dengan `x`, ia akan mengembalikan alamat _node_ tersebut, jika tidak, ia mengembalikan `Nil`.
@@ -96,11 +98,11 @@ Fungsi `main` mendemonstrasikan semua ini:
 5. Terakhir, `deleteAll(L)` dipanggil, yang menghapus semua 5 elemen yang tersisa satu per satu dari depan, dan mencetak jumlah elemen yang dihapus.
 
 **Output**:
-![[Pasted image 20251025122813.png]]
+<img width="416" height="212" alt="Screenshot 2025-10-25 122807" src="https://github.com/user-attachments/assets/5d514613-8b2f-4fa5-b73b-2e0312eb0517" />
 
 ### 5.3 Unguided 3
 
-![[unguided3.png]]
+<img width="2264" height="9222" alt="unguided3" src="https://github.com/user-attachments/assets/c55db6a9-b3bd-4e65-9067-d623469bb1dd" />
 
 **Penjelasan**:
 Kode ini adalah puncak dari semua latihan sebelumnya, menggabungkan semua fungsi (`insert`, `delete`, `print`) dan menambahkan dua operasi kondisional yang canggih: `smartInsert` dan `conditionalDelete`.
@@ -163,7 +165,7 @@ Berikut adalah apa yang terjadi langkah demi langkah:
     - _Loop_ berhenti. Fungsi mencetak `Semua elemen (2) berhasil dihapus`.
 
 **Output**:
-![[Pasted image 20251025123522.png]]
+<img width="575" height="650" alt="Screenshot 2025-10-25 123508" src="https://github.com/user-attachments/assets/9e970e2f-00b2-4562-959d-518339817f35" />
 
 ## 6. Kesimpulan
 
