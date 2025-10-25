@@ -54,6 +54,7 @@ Struktur data adalah cara untuk menyimpan dan mengorganisir data dalam komputer 
 Kode ini mendefinisikan struktur data **Doubly Linked List (DLL)**, yang terdiri dari _node_ (`elmlist`) dengan _pointer_ `next` dan `prev`, serta _header_ `List` yang melacak `first` dan `last`. Program ini menyediakan fungsi esensial untuk **menyisipkan** _node_ di tiga lokasi: `insertFirst` (di awal), `insertLast` (di akhir), dan `insertAfter` (di tengah, setelah _node_ tertentu). Fungsi `main` kemudian mendemonstrasikan operasi ini: pertama memasukkan 10 (ke awal), lalu 20 (ke akhir), dan terakhir 30 (setelah 10). Hasil akhir dari urutan sisipan ini, yang ditampilkan oleh fungsi `printInfo`, adalah `10 30 20`.
 
 **Output**:
+
 <img width="584" height="78" alt="Screenshot 2025-10-25 121451" src="https://github.com/user-attachments/assets/c2e4c3c2-1611-4211-894d-5b6202f5375c" />
 
 ### 4.2 Guided 2
@@ -64,6 +65,7 @@ Kode ini mendefinisikan struktur data **Doubly Linked List (DLL)**, yang terdiri
 Kode ini adalah implementasi **Doubly Linked List (DLL)** yang berfokus pada operasi **penghapusan**. Fungsi `main` pertama-tama membuat _list_ `3 <-> 2 <-> 1` dengan tiga kali memanggil `insertFirst`. Panggilan `printInfo` pertama kemudian mencetak `3 2 1`. Selanjutnya, program memanggil `deleteFirst` (yang menghapus `3`), lalu memanggil `deleteAfter(L.first)` (yang menghapus elemen _setelah_ _node_ `2`, yaitu `1`). Panggilan `printInfo` kedua akhirnya mencetak elemen tunggal yang tersisa: `2`.
 
 **Output**:
+
 <img width="327" height="108" alt="Screenshot 2025-10-25 122017" src="https://github.com/user-attachments/assets/eda38416-f656-4490-b2a9-06fa4d36626c" />
 
 ## 5. Unguided
@@ -77,6 +79,7 @@ Kode ini adalah implementasi dari **Doubly Linked List (DLL)** yang menambahkan 
 Fungsi `main` mendemonstrasikan alur kerja ini. Pertama, _list_ awal dibuat menjadi `1 <-> 3 <-> 2`. `printInfo` dan `printReverse` mencetak _list_ awal ini (`1 3 2` dan `2 3 1`). Kemudian, `insertBefore` dipanggil untuk menyisipkan `4` _sebelum_ _node_ `2`, menghasilkan `1 <-> 3 <-> 4 <-> 2`. Setelah itu, `insertBefore` dipanggil lagi untuk menyisipkan `5` _sebelum_ _node_ `1`, yang merupakan kasus khusus yang memanggil `insertFirst`. Hasil akhirnya, _list_ menjadi `5 <-> 1 <-> 3 <-> 4 <-> 2`, yang kemudian dicetak lagi secara forward (`5 1 3 4 2`) dan reverse (`2 4 3 1 5`).
 
 **Output**:
+
 <img width="315" height="235" alt="Screenshot 2025-10-25 122407" src="https://github.com/user-attachments/assets/dcec8106-e74c-4396-be7b-f08c2cee4987" />
 
 ### 5.2 Unguided 2
@@ -98,11 +101,246 @@ Fungsi `main` mendemonstrasikan semua ini:
 5. Terakhir, `deleteAll(L)` dipanggil, yang menghapus semua 5 elemen yang tersisa satu per satu dari depan, dan mencetak jumlah elemen yang dihapus.
 
 **Output**:
+
 <img width="416" height="212" alt="Screenshot 2025-10-25 122807" src="https://github.com/user-attachments/assets/5d514613-8b2f-4fa5-b73b-2e0312eb0517" />
 
 ### 5.3 Unguided 3
 
-<img width="2264" height="9222" alt="unguided3" src="https://github.com/user-attachments/assets/c55db6a9-b3bd-4e65-9067-d623469bb1dd" />
+#include <iostream>
+using namespace std;
+#define Nil NULL
+
+typedef int infotype;
+typedef struct elmlist *address;
+
+struct elmlist {
+    infotype info;
+    address next;
+    address prev;
+};
+
+struct List {
+    address first;
+    address last;
+};
+
+address alokasi(infotype x) {
+    address P = new elmlist;
+    P->info = x;
+    P->next = Nil;
+    P->prev = Nil;
+    return P;
+}
+
+void dealokasi(address &P) { if (P != Nil) { delete P; P = Nil; } }
+
+void insertFirst(List &L, address P) {
+    P->next = L.first;
+    P->prev = Nil;
+    if (L.first != Nil) L.first->prev = P;
+    else L.last = P;
+    L.first = P;
+}
+
+void insertLast(List &L, address P) {
+    P->prev = L.last;
+    P->next = Nil;
+    if (L.last != Nil) L.last->next = P;
+    else L.first = P;
+    L.last = P;
+}
+
+void insertAfter(List &L, address P, address R) {
+    P->next = R->next;
+    P->prev = R;
+    if (R->next != Nil) R->next->prev = P;
+    else L.last = P;
+    R->next = P;
+}
+
+void deleteFirst(List &L, address &P) {
+    P = L.first; L.first = L.first->next;
+    if (L.first != Nil) L.first->prev = Nil;
+    else L.last = Nil;
+    P->next = Nil;
+    P->prev = Nil;
+}
+
+void deleteLast(List &L, address &P) {
+    P = L.last; L.last = L.last->prev;
+    if (L.last != Nil) L.last->next = Nil;
+    else L.first = Nil;
+    P->prev = Nil;
+    P->next = Nil;
+}
+
+void deleteAfter(List &L, address &P, address R) {
+    P = R->next;
+    R->next = P->next;
+    if (P->next != Nil) P->next->prev = R;
+    else L.last = R;
+    P->prev = Nil;
+    P->next = Nil;
+}
+
+address findElm(List L, infotype x) {
+    address P = L.first;
+    while (P != Nil) {
+        if (P->info == x) {
+            return P;
+        }
+        P = P->next;
+    }
+    return Nil;
+}
+
+bool deleteByValue(List &L, infotype x) {
+    address P = findElm(L, x);
+    if (P == Nil) {
+        return false;
+    }
+    address Pdel;
+    if (P == L.first) {
+        deleteFirst(L, Pdel);
+    } else if (P == L.last) {
+        deleteLast(L, Pdel);
+    } else {
+        address R = P->prev;
+        deleteAfter(L, Pdel, R);
+    }
+    dealokasi(Pdel);
+    return true;
+}
+
+int deleteAll(List &L) {
+    int count = 0;
+    address Pdel;
+    while (L.first != Nil) {
+        deleteFirst(L, Pdel);
+        dealokasi(Pdel);
+        count++;
+    }
+    return count;
+}
+
+void printInfo(List L) {
+    address P = L.first;
+    while (P != Nil) {
+        cout << P->info << " ";
+        P = P->next;
+    }
+    cout << endl;
+}
+
+void printReverse(List L) {
+    address P = L.last;
+    while (P != Nil) {
+        cout << P->info << " ";
+        P = P->prev;
+    }
+    cout << endl;
+}
+
+void smartInsert(List &L, infotype x) {
+    address P = alokasi(x);
+    
+    if (L.first == Nil) {
+        cout << "Smart Insert: List kosong, insert " << x << " di first" << endl;
+        insertFirst(L, P);
+    
+    } else if (x < L.first->info) {
+        cout << "Smart Insert: " << x << " < first, insert di first" << endl;
+        insertFirst(L, P);
+    
+    } else if (x % 2 == 0) {
+        cout << "Smart Insert: " << x << " genap, insert di last" << endl;
+        insertLast(L, P);
+    
+    } else if (L.first->next != Nil) {
+        cout << "Smart Insert: " << x << " di antara " << L.first->next->info << " dan " << L.first->next->next->info << endl;
+        insertAfter(L, P, L.first->next);
+    
+    } else {
+        cout << "Smart Insert: " << x << " (default), insert di last" << endl;
+        insertLast(L, P);
+    }
+}
+
+void conditionalDelete(List &L, int &count) {
+    count = 0;
+    address P = L.first;
+    while (P != Nil) {
+        address nextNode = P->next; // Simpan node berikutnya        
+        if (P->info % 2 != 0) {
+            address Pdel;
+            if (P == L.first) {
+                deleteFirst(L, Pdel);
+            } else if (P == L.last) {
+                deleteLast(L, Pdel);
+            } else {
+                address R = P->prev;
+                deleteAfter(L, Pdel, R);
+            }
+            dealokasi(Pdel);
+            count++;
+        }
+        P = nextNode; // Pindah ke node berikutnya yang sudah disimpan
+    }
+}
+
+int main() {
+    List L;
+    L.first = Nil;
+    L.last = Nil;
+
+    cout << "ADVANCED OPERATIONS" << endl;
+    
+    cout << "SMART INSERT DEMO" << endl;
+    smartInsert(L, 5);  // List kosong -> insertFirst
+    smartInsert(L, 3);  // 3 < 5 -> insertFirst
+    smartInsert(L, 8);  // 8 genap -> insertLast
+    smartInsert(L, 6);  // 6 genap -> insertLast
+    smartInsert(L, 4);  // 4 genap -> insertLast
+    smartInsert(L, 7);  // Default -> insertAfter(L.first->next) / setelah 5
+    
+    cout << "\nHasil Smart Insert:" << endl;
+    cout << "Forward: ";
+    printInfo(L); // Output: 3 5 7 8 6 4
+    cout << "Backward: ";
+    printReverse(L); // Output: 4 6 8 7 5 3
+    
+    cout << "\nCONDITIONAL DELETE" << endl;
+    cout << "Sebelum Conditional Delete: ";
+    printInfo(L); // Output: 3 5 7 8 6 4
+    
+    int deletedCount = 0;
+    conditionalDelete(L, deletedCount); // Hapus semua yg ganjil (3, 5, 7)
+    
+    cout << "Conditional Delete: " << deletedCount << " elemen ganjil dihapus" << endl;
+    cout << "Setelah Conditional Delete: ";
+    printInfo(L); // Output: 8 6 4
+
+    cout << "\nDELETE BY VALUE DEMO" << endl;
+    if (deleteByValue(L, 6)) {
+        cout << "Nilai 6 berhasil dihapus" << endl;
+    } else {
+        cout << "Nilai 6 tidak ditemukan" << endl;
+    }
+
+    if (deleteByValue(L, 10)) {
+        cout << "Nilai 10 berhasil dihapus" << endl;
+    } else {
+        cout << "Nilai 10 tidak ditemukan" << endl;
+    }
+    
+    cout << "List akhir: ";
+    printInfo(L);
+    cout << "\nDELETE ALL DEMO" << endl;
+    int allCount = deleteAll(L);
+    cout << "Semua elemen (" << allCount << ") berhasil dihapus" << endl;
+
+    return 0;
+}
 
 **Penjelasan**:
 Kode ini adalah puncak dari semua latihan sebelumnya, menggabungkan semua fungsi (`insert`, `delete`, `print`) dan menambahkan dua operasi kondisional yang canggih: `smartInsert` dan `conditionalDelete`.
@@ -165,6 +403,7 @@ Berikut adalah apa yang terjadi langkah demi langkah:
     - _Loop_ berhenti. Fungsi mencetak `Semua elemen (2) berhasil dihapus`.
 
 **Output**:
+
 <img width="575" height="650" alt="Screenshot 2025-10-25 123508" src="https://github.com/user-attachments/assets/9e970e2f-00b2-4562-959d-518339817f35" />
 
 ## 6. Kesimpulan
