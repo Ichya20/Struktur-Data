@@ -1,0 +1,27 @@
+#ifndef STACK_H
+#define STACK_H
+
+#define MaxEl 20
+#define Nil -1
+
+typedef int infotype;
+
+struct Stack {
+    infotype info[MaxEl]; // Array untuk menyimpan elemen stack
+    int TOP;
+};
+
+// Prototipe fungsi dasar
+void CreateStack(Stack &S);
+bool IsEmpty(Stack S);
+bool IsFull(Stack S);
+void Push(Stack &S, infotype X);
+infotype Pop(Stack &S);
+void printInfo(Stack S);
+
+// Fungsi tambahan
+void balikStack(Stack &S); // Membalik urutan elemen stack
+void pushAscending(Stack &S, infotype X);
+void getInputStream(Stack &S);
+
+#endif
