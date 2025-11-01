@@ -19,7 +19,7 @@ Selain operasi dasar, kode ini juga mendemonstrasikan algoritma-algoritma yang m
 ## 4. Guided
 ### 4.1 Guided 1
 
-![[stackH.png]]
+<img width="1280" height="1356" alt="stackH" src="https://github.com/user-attachments/assets/36971697-650c-41e2-99d2-ba82f5f81a2c" />
 
 **Penjelasan**:
 
@@ -27,7 +27,7 @@ Selain operasi dasar, kode ini juga mendemonstrasikan algoritma-algoritma yang m
 
 ### 4.2 Guided 2
 
-![[stackCPP.png]]
+<img width="1524" height="4548" alt="stackCPP" src="https://github.com/user-attachments/assets/73c2b6df-45d4-44f0-add8-97898a305814" />
 
 **Penjelasan**:
 
@@ -35,7 +35,7 @@ Selain operasi dasar, kode ini juga mendemonstrasikan algoritma-algoritma yang m
 
 ### 4.3 Guided 3
 
-![[mainCPP.png]]
+<img width="1002" height="1394" alt="mainCPP" src="https://github.com/user-attachments/assets/d9ddfe84-d542-4ad8-8e51-a24d74ae1803" />
 
 **Penjelasan**:
 
@@ -43,12 +43,12 @@ File `main.cpp` ini pada dasarnya adalah **program utama** atau _driver_ yang tu
 
 **Hasil Output main.cpp**:
 
-![[Pasted image 20251101114822.png]]
+<img width="1212" height="160" alt="Screenshot 2025-11-01 114815" src="https://github.com/user-attachments/assets/8d824912-1e74-4fa4-8836-a0febb8cf5f7" />
 
 ## 5. Unguided
 ### 5.1 Unguided 1
 
-![[Ungu1.png]]
+<img width="1002" height="1432" alt="Ungu1" src="https://github.com/user-attachments/assets/d9d4ff56-c4b7-410c-aefb-68fdf5cb113a" />
 
 **Penjelasan**:
 
@@ -56,11 +56,11 @@ File `main.cpp` ini pada dasarnya adalah **program utama** atau _driver_ yang tu
 
 **Output**:
 
-![[Pasted image 20251101115304.png]]
+<img width="1262" height="186" alt="Screenshot 2025-11-01 115257" src="https://github.com/user-attachments/assets/33a2a32c-ff44-4711-959f-1bb3edcb29af" />
 
 ### 5.2 Unguided 2
 
-![[Ungu2.png]]
+<img width="848" height="1052" alt="Ungu2" src="https://github.com/user-attachments/assets/02de6403-0443-4b33-9623-589a1be31524" />
 
 **Penjelasan**:
 
@@ -68,11 +68,11 @@ File `main.cpp` ini pada dasarnya adalah **program utama** atau _driver_ yang tu
 
 **Output**:
 
-![[Pasted image 20251101115733.png]]
+<img width="1268" height="159" alt="Screenshot 2025-11-01 115730" src="https://github.com/user-attachments/assets/0d3f8bf3-49b3-4ffc-a14d-aa14525ffaae" />
 
 ### 5.3 Unguided 3
 
-![[Ungu3.png]]
+<img width="848" height="938" alt="Ungu3" src="https://github.com/user-attachments/assets/ff8c33e4-2ee3-4855-9c79-260492031037" />
 
 **Penjelasan**:
 
@@ -80,7 +80,7 @@ File `main.cpp` ini pada dasarnya adalah **program utama** atau _driver_ yang tu
 
 **Output**:
 
-![[Pasted image 20251101120811.png]]
+<img width="1252" height="184" alt="Screenshot 2025-11-01 120805" src="https://github.com/user-attachments/assets/511c520c-bb36-49fe-9bb4-0e8670ded989" />
 
 ## 6. Kesimpulan
 
