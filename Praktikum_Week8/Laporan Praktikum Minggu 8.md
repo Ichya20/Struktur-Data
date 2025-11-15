@@ -20,7 +20,7 @@ Untuk mengatasi ketidakefisienan tersebut, **Alternatif 2** (`unguided2.cpp`) di
 ## 4. Guided
 ### 4.1 Guided 1
 
-![[queueH new.png]]
+<img width="848" height="1204" alt="queueH new" src="https://github.com/user-attachments/assets/fc2822eb-ee55-4278-961a-b7d68dc32a77" />
 
 **Penjelasan**:
 
@@ -28,7 +28,7 @@ Untuk mengatasi ketidakefisienan tersebut, **Alternatif 2** (`unguided2.cpp`) di
 
 ### 4.2 Guided 2
 
-![[queueCPP.png]]
+<img width="1680" height="2572" alt="queueCPP" src="https://github.com/user-attachments/assets/8ac76b54-64b1-4710-a895-4c843238b88b" />
 
 **Penjelasan**:
 
@@ -44,7 +44,7 @@ Terakhir, `printInfo` adalah fungsi yang cerdas. Ia mulai mencetak dari `Q.head`
 
 ### 4.3 Guided 3
 
-![[queueMAIN 2.png]]
+<img width="956" height="1888" alt="queueMAIN" src="https://github.com/user-attachments/assets/d98f6ce9-6341-4099-b1c2-8cb36fb1f506" />
 
 **Penjelasan**:
 
@@ -54,12 +54,12 @@ Setelah itu, program mensimulasikan penambahan tiga elemen berturut-turut: `enqu
 
 **Hasil Output main.cpp**:
 
-![[Screenshot 2025-11-14 083106.png]]
+<img width="863" height="479" alt="Screenshot 2025-11-14 083106" src="https://github.com/user-attachments/assets/a230882a-2f7a-4a7e-8575-3700e871d6b2" />
 
 ## 5. Unguided
 ### 5.1 Unguided 1
 
-![[unguided1QUEUE 2.png]]
+<img width="1048" height="2496" alt="unguided1QUEUE" src="https://github.com/user-attachments/assets/485692ee-3b16-46f4-a3e7-dda46f0bbb24" />
 
 **Penjelasan**:
 
@@ -77,11 +77,11 @@ Fungsi `printInfo` mencetak status `head` dan `tail` saat ini. Jika antrean koso
 
 **Output**:
 
-![[Pasted image 20251115150451.png]]
+<img width="276" height="341" alt="Screenshot 2025-11-15 150445" src="https://github.com/user-attachments/assets/86ab0fe2-9e8e-4257-8581-f8f877a81ce7" />
 
 ### 5.2 Unguided 2
 
-![[unguided2QUEUE.png]]
+<img width="1140" height="2382" alt="unguided2QUEUE" src="https://github.com/user-attachments/assets/d1df2c97-9b29-4fdb-8fdb-13ce1866a806" />
 
 **Penjelasan**:
 
@@ -101,11 +101,11 @@ Fungsi `printInfo` mencetak status `head` dan `tail`. Saat mencetak isi antrean,
 
 **Output**:
 
-![[Pasted image 20251115150818.png]]
+<img width="261" height="337" alt="Screenshot 2025-11-15 150812" src="https://github.com/user-attachments/assets/68bc1e08-baef-408e-99e8-085bab18adc1" />
 
 ### 5.3 Unguided 3
 
-![[unguided3QUEUE.png]]
+<img width="1048" height="2116" alt="unguided3QUEUE" src="https://github.com/user-attachments/assets/72eb9587-d8c2-439b-81e5-4718c5d55e0f" />
 
 **Penjelasan**:
 
@@ -123,7 +123,7 @@ Fungsi `printInfo` juga menggunakan logika melingkar. Ia memulai _loop_ dari `Q.
 
 **Output**:
 
-![[Pasted image 20251115151019.png]]
+<img width="251" height="343" alt="Screenshot 2025-11-15 151016" src="https://github.com/user-attachments/assets/b21bcded-27f3-4e97-853e-eb3cc1156ad6" />
 
 ## 6. Kesimpulan
 
