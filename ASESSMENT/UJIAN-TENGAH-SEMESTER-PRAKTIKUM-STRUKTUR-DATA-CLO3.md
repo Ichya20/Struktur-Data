@@ -5,6 +5,8 @@ Asessment Laporan Stuktur Data
 - Kelas: 12-IF-05/Struktur Data
 
 1. Kode Program
+- Author : Ichya Ulumiddiin
+- NIM : 103112400076
 
         #include <iostream>
         using namespace std;
@@ -123,7 +125,7 @@ Asessment Laporan Stuktur Data
 
             return 0;
             }
-```
+
 
 2. Penjelasan Kode
 
@@ -174,12 +176,13 @@ Asessment Laporan Stuktur Data
 
 3. Output Program
 
-<img width="1108" height="719" alt="Screenshot 2025-11-21 083911" src="https://github.com/user-attachments/assets/a04e0297-3fe6-42f7-bfb0-5287281b2c60" />
+   <img width="1108" height="719" alt="Screenshot 2025-11-21 083911" src="https://github.com/user-attachments/assets/a04e0297-3fe6-42f7-bfb0-5287281b2c60" />
 
 4. Penjelasan Lanjutan (Analisis Output)
 
-Pada Hasil Output tersebut bisa dilihat bahwa, Proses dimulai dengan input data 5, 10, 15, dan 20 yang tersimpan secara berurutan. Kemudian, fungsi *delete last* berhasil menghapus elemen terakhir (angka 20), dan fungsi *reverse* membalik sisa data yang ada. Hasil akhir "15 10 5" membuktikan bahwa seluruh logika manipulasi data (tambah, hapus, dan balik urutan) telah berfungsi dengan benar. Penjelasan lebih lengkapnya bisa dilihat pada bagian penjelasan kode.
+   Pada Hasil Output tersebut bisa dilihat bahwa, Proses dimulai dengan input data 5, 10, 15, dan 20 yang tersimpan secara berurutan. Kemudian, fungsi *delete last* berhasil menghapus elemen terakhir (angka 20), dan fungsi *reverse* membalik sisa data yang ada. Hasil akhir "15 10 5" membuktikan bahwa seluruh logika manipulasi data (tambah, hapus, dan balik urutan) telah berfungsi dengan benar. Penjelasan lebih lengkapnya bisa dilihat pada bagian penjelasan kode.
+
 5. Kesimpulan
 
-    Dari seluruh implementasi kode yang telah dilaksanakan diatas, kita bisa menyimpulkan bahwa, beberapa fungsi yang sudah dijalankan berjalan dengan baik tanpa ada error. Diantaranya yaitu fungsi InsertLast, DeleteLast, View, dan Reverese View juga menampilkan rangkaian kode yang efisien sebagaimana mestinya. Kompleksitas dan Analisis dalam melakukan pengkodingan pada soal diatas harus betul betul dilakukan secara teliti karena ada beberapa fungsi yang memiliki kerumitan sedikit lebih tinggi dibanding fungsi yang lainnya. 
+    Dari seluruh implementasi kode yang telah dilaksanakan diatas, kita bisa menyimpulkan bahwa, beberapa fungsi yang sudah dijalankan berjalan dengan baik tanpa  ada error. Diantaranya yaitu fungsi InsertLast, DeleteLast, View, dan Reverese View juga menampilkan rangkaian kode yang efisien sebagaimana mestinya. Kompleksitas dan Analisis dalam melakukan pengkodingan pada soal diatas harus betul betul dilakukan secara teliti karena ada beberapa fungsi yang memiliki kerumitan sedikit lebih tinggi dibanding fungsi yang lainnya. 
 
