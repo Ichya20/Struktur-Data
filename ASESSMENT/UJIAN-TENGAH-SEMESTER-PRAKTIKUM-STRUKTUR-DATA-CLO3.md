@@ -174,7 +174,7 @@ Kelas: 12-IF-05/Struktur Data
 
 3. Output Program
 
-    ![alt text](<Screenshot 2025-11-21 083911.png>)
+<img width="1108" height="719" alt="Screenshot 2025-11-21 083911" src="https://github.com/user-attachments/assets/a04e0297-3fe6-42f7-bfb0-5287281b2c60" />
 
 4. Penjelasan Lanjutan (Analisis Output)
 
