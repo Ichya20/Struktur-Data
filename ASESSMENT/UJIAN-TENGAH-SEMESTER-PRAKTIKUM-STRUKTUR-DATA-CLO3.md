@@ -1,8 +1,8 @@
 Asessment Laporan Stuktur Data
 
-Nama: Ichya Ulumiddiin
-NIM: 103112400076
-Kelas: 12-IF-05/Struktur Data
+- Nama: Ichya Ulumiddiin
+- NIM: 103112400076
+- Kelas: 12-IF-05/Struktur Data
 
 1. Kode Program
 
@@ -122,7 +122,7 @@ Kelas: 12-IF-05/Struktur Data
             } while (pilihan != 0);
 
             return 0;
-    }
+            }
 ```
 
 2. Penjelasan Kode
@@ -178,8 +178,7 @@ Kelas: 12-IF-05/Struktur Data
 
 4. Penjelasan Lanjutan (Analisis Output)
 
-    Pada Hasil Output tersebut bisa dilihat bahwa, Proses dimulai dengan input data 5, 10, 15, dan 20 yang tersimpan secara berurutan. Kemudian, fungsi *delete last* berhasil menghapus elemen terakhir (angka 20), dan fungsi *reverse* membalik sisa data yang ada. Hasil akhir "15 10 5" membuktikan bahwa seluruh logika manipulasi data (tambah, hapus, dan balik urutan) telah berfungsi dengan benar. Penjelasan lebih lengkapnya bisa dilihat pada bagian penjelasan kode.
-
+Pada Hasil Output tersebut bisa dilihat bahwa, Proses dimulai dengan input data 5, 10, 15, dan 20 yang tersimpan secara berurutan. Kemudian, fungsi *delete last* berhasil menghapus elemen terakhir (angka 20), dan fungsi *reverse* membalik sisa data yang ada. Hasil akhir "15 10 5" membuktikan bahwa seluruh logika manipulasi data (tambah, hapus, dan balik urutan) telah berfungsi dengan benar. Penjelasan lebih lengkapnya bisa dilihat pada bagian penjelasan kode.
 5. Kesimpulan
 
     Dari seluruh implementasi kode yang telah dilaksanakan diatas, kita bisa menyimpulkan bahwa, beberapa fungsi yang sudah dijalankan berjalan dengan baik tanpa ada error. Diantaranya yaitu fungsi InsertLast, DeleteLast, View, dan Reverese View juga menampilkan rangkaian kode yang efisien sebagaimana mestinya. Kompleksitas dan Analisis dalam melakukan pengkodingan pada soal diatas harus betul betul dilakukan secara teliti karena ada beberapa fungsi yang memiliki kerumitan sedikit lebih tinggi dibanding fungsi yang lainnya. 
