@@ -18,7 +18,7 @@ Sementara itu, **Circular Linked List** adalah variasi dari linked list di mana 
 ## 4. Guided
 ### 4.1 Guided 1
 
-
+<img width="1464" height="2420" alt="multilistH" src="https://github.com/user-attachments/assets/d6f078c9-2ea6-40de-8864-91b6d83e15b5" />
 
 **Penjelasan**:
 
@@ -26,6 +26,7 @@ Sementara itu, **Circular Linked List** adalah variasi dari linked list di mana 
 
 ### 4.2 Guided 2
 
+<img width="1478" height="4358" alt="multilistCPP" src="https://github.com/user-attachments/assets/fdd014bb-5662-4cdf-92fa-ef0aab82b1b2" />
 
 
 **Penjelasan**:
@@ -34,6 +35,7 @@ Sementara itu, **Circular Linked List** adalah variasi dari linked list di mana 
 
 ### 4.3 Guided 3
 
+<img width="1156" height="2496" alt="multilistanakCPP" src="https://github.com/user-attachments/assets/8e1abf4b-3e14-4840-bd4c-58f940425400" />
 
 
 **Penjelasan**:
@@ -42,6 +44,7 @@ Sementara itu, **Circular Linked List** adalah variasi dari linked list di mana 
 
 ### 4.4 Guided 4
 
+<img width="910" height="1166" alt="mainMULTILISTcpp" src="https://github.com/user-attachments/assets/33f9fba7-8122-422a-9b95-f63007536e75" />
 
 
 **Penjelasan**:
@@ -50,11 +53,13 @@ Sementara itu, **Circular Linked List** adalah variasi dari linked list di mana 
 
 **Output**:
 
+<img width="271" height="146" alt="image" src="https://github.com/user-attachments/assets/a047a75d-54ed-4408-9d4e-83ead0b974c9" />
 
 
 ## 5. Unguided
 ### 5.1 Unguided 1
 
+<img width="1264" height="1470" alt="multiUnguided" src="https://github.com/user-attachments/assets/7ecfc275-d841-44e4-abda-659d867fe78d" />
 
 
 **Penjelasan**:
@@ -71,11 +76,13 @@ Sementara itu, **Circular Linked List** adalah variasi dari linked list di mana 
 
 **Output**:
 
+<img width="449" height="397" alt="image" src="https://github.com/user-attachments/assets/ac7079e9-7e6a-4a20-92a2-2a4fc749d19f" />
 
 
 ### 5.2 Unguided 2
 **Circular.h**
 
+<img width="1094" height="1736" alt="circularH" src="https://github.com/user-attachments/assets/395dd1cb-b715-4bca-a098-db5047853200" />
 
 
 **Penjelasan**:
@@ -86,6 +93,7 @@ Bagian kedua file ini berisi daftar menu atau perintah apa saja yang bisa dilaku
 
 **Circular.cpp**
 
+<img width="1232" height="4396" alt="circularCPP" src="https://github.com/user-attachments/assets/ae6c2777-88d7-4fcb-89f5-35638e533b9d" />
 
 
 **Penjelasan**:
@@ -96,14 +104,20 @@ Bagian selanjutnya mengatur bagaimana cara menghapus dan menampilkan data agar t
 
 **Unguided2.cpp**
 
+<img width="1186" height="1926" alt="circularUnguided2" src="https://github.com/user-attachments/assets/a7b79e87-179b-4e92-956f-8e52c736380f" />
 
 
 **Penjelasan**:
 
 **Unguided3.cpp** berperan sebagai "pusat komando" untuk menjalankan program Circular List data mahasiswa. Langkah pertamanya adalah menyiapkan daftar kosong, lalu mulai memasukkan data mahasiswa satu per satu. Uniknya, program ini tidak memasukkan data secara sembarangan, melainkan menggunakan strategi pengurutan manual agar hasilnya nanti otomatis rapi berurutan sesuai NIM (dari 01 sampai 08) persis seperti yang diminta pada gambar soal, meskipun urutan codingnya terlihat acak .
 
-Untuk menyusun barisan yang rapi tersebut, program ini mendemonstrasikan kecanggihan pointer dengan mencampur berbagai cara input. Ada data yang dipaksa masuk di paling depan menggunakan `insertFirst`, ada yang ditaruh di paling belakang dengan `insertLast`, dan banyak juga yang diselipkan "nyelip" di tengah-tengah antrean menggunakan `insertAfter` (misalnya menyisipkan Bobi tepat setelah Ali). Setelah semua tersusun, program memanggil perintah `printInfo` untuk menampilkan hasilnya ke layar, membuktikan bahwa lingkaran data mahasiswa sudah terbentuk sempurna tanpa putus .
+Untuk menyusun barisan yang rapi tersebut, program ini mendemonstrasikan kecanggihan pointer dengan mencampur berbagai cara input. Ada data yang dipaksa masuk di paling depan menggunakan `insertFirst`, ada yang ditaruh di paling belakang dengan `insertLast`, dan banyak juga yang diselipkan "nyelip" di tengah-tengah antrean menggunakan `insertAfter` (misalnya menyisipkan Bobi tepat setelah Ali). Setelah semua tersusun, program memanggil perintah `printInfo` untuk menampilkan hasilnya ke layar, membuktikan bahwa lingkaran data mahasiswa sudah terbentuk sempurna tanpa putus.
 
+**Output**
+
+<img width="395" height="788" alt="image" src="https://github.com/user-attachments/assets/49703d94-472e-4760-8ffa-bf317242fd1b" />
+
+<img width="182" height="514" alt="image" src="https://github.com/user-attachments/assets/0bc1abcb-9aeb-4f1c-8c8e-fcd1602e1a32" />
 
 ## 6. Kesimpulan
 
