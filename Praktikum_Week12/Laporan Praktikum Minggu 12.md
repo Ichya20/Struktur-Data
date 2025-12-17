@@ -20,6 +20,7 @@ Aspek penting lainnya dalam pemahaman graph adalah konsep ketetanggaan, di mana 
 ## 4. Guided
 ### 4.1 Guided 1
 
+<img width="1372" height="1698" alt="graphH" src="https://github.com/user-attachments/assets/dc69899e-77a0-4662-8eb0-2218f2e46881" />
 
 
 **Penjelasan**:
@@ -28,6 +29,7 @@ Aspek penting lainnya dalam pemahaman graph adalah konsep ketetanggaan, di mana 
 
 ### 4.2 Guided 2
 
+<img width="926" height="1318" alt="graphInit" src="https://github.com/user-attachments/assets/0ff6d52a-ba89-4c59-99c6-48585dc2e83b" />
 
 
 **Penjelasan**:
@@ -36,6 +38,7 @@ Aspek penting lainnya dalam pemahaman graph adalah konsep ketetanggaan, di mana 
 
 ### 4.3 Guided 3
 
+<img width="1172" height="1318" alt="grapEdge" src="https://github.com/user-attachments/assets/b9e68c63-2442-40ef-9130-16ea0c7acc47" />
 
 
 **Penjelasan**:
@@ -44,6 +47,7 @@ Aspek penting lainnya dalam pemahaman graph adalah konsep ketetanggaan, di mana 
 
 ### 4.4 Guided 4
 
+<img width="1234" height="2838" alt="graphPrint" src="https://github.com/user-attachments/assets/6c7a5a59-0314-446a-9b8f-bc71814bd978" />
 
 
 **Penjelasan**:
@@ -52,6 +56,7 @@ Aspek penting lainnya dalam pemahaman graph adalah konsep ketetanggaan, di mana 
 
 ### 4.5 Guided 5
 
+<img width="910" height="1204" alt="graphMain" src="https://github.com/user-attachments/assets/8f580cad-c199-47df-a2f3-999637f4a828" />
 
 
 **Penjelasan**:
@@ -60,12 +65,14 @@ Aspek penting lainnya dalam pemahaman graph adalah konsep ketetanggaan, di mana 
 
 **Output**:
 
+<img width="1008" height="157" alt="Screenshot 2025-12-16 204450" src="https://github.com/user-attachments/assets/ab7b0966-e16e-462f-ad2b-57ba4573803c" />
 
 
 
 ## 5. Unguided
 ### 5.1 Unguided 1
 
+<img width="1280" height="1166" alt="graphUnguided1" src="https://github.com/user-attachments/assets/ce57120c-f6bf-42c7-8e2f-d65f15f806fe" />
 
 
 **Penjelasan**:
@@ -76,10 +83,12 @@ Cara mengerjakannya fokus pada pengubahan fungsi `connectNode`. Kita memodifikas
 
 **Output**:
 
+<img width="463" height="240" alt="Screenshot 2025-12-17 143555" src="https://github.com/user-attachments/assets/32c220db-a798-4734-b60a-b2ec540dea26" />
 
 
 ### 5.2 Unguided 2
 
+<img width="1280" height="1242" alt="graphUnguided2" src="https://github.com/user-attachments/assets/fc77b6ec-4838-44e5-a469-fd9f4ec02407" />
 
 
 **Penjelasan**:
@@ -90,10 +99,12 @@ Dalam kodingannya, kita menggunakan teknik rekursif (fungsi yang memanggil dirin
 
 **Output**:
 
+<img width="444" height="55" alt="Screenshot 2025-12-17 143643" src="https://github.com/user-attachments/assets/6d70502d-148c-4d51-a88d-cc84e1ba3642" />
 
 
 ### 5.3 Unguided 3
 
+<img width="1280" height="1242" alt="graphUnguided3" src="https://github.com/user-attachments/assets/e0fc4e82-8bd2-4cf3-8945-581dd71903f6" />
 
 
 **Penjelasan**:
@@ -104,6 +115,7 @@ Secara teknis, untuk mengerjakan ini kita membutuhkan bantuan struktur data bern
 
 **Output**:
 
+<img width="491" height="58" alt="Screenshot 2025-12-17 143718" src="https://github.com/user-attachments/assets/fe14620f-a6c8-4955-9c8b-a43ac2e3e203" />
 
 
 ## 6. Kesimpulan
